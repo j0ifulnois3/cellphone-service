@@ -1,20 +1,20 @@
 package com.pluralsight;
 
-//CLASS AND VARIABLES:
+//CLASS AND DATA:
 public class CellPhone {
-    private long serialNumber;
-    private String phoneModel;
-    private String phoneCarrier;
-    private String phoneNumber;
-    private String phoneOwner;
+     long serialNumber;
+     String phoneModel;
+     String phoneCarrier;
+     String phoneNumber;
+     String phoneOwner;
 
 //Constructor:
     public CellPhone() {
-        this.serialNumber = serialNumber;
-        this.phoneModel = phoneModel;
-        this.phoneCarrier = phoneCarrier;
-        this.phoneNumber = phoneNumber;
-        this.phoneOwner = phoneOwner;
+        this.serialNumber = 0;
+        this.phoneModel = "";
+        this.phoneCarrier = "";
+        this.phoneNumber = "";
+        this.phoneOwner = "";
     }
 
 //GETTERS and SETTERS:
