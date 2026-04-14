@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class CellPhoneApplication {
 
-    public static CellPhone main(String[] args) {
+    private static Scanner input = new Scanner(System.in);
 
-        CellPhone phone = new CellPhone();
-
-        Scanner input = new Scanner(System.in);
-
+    public static void main(String[] args) {
 
 //CREATE BLANK PHONE:
         CellPhone cellphone = new CellPhone();
@@ -17,6 +14,7 @@ public class CellPhoneApplication {
 //        Gathering Data:
         System.out.print("What is your serial number? ");
         long serialNumber = input.nextLong();
+        input.nextLine();
 
         System.out.print("What model is your phone?");
         String phoneModel = input.nextLine();
@@ -25,10 +23,10 @@ public class CellPhoneApplication {
         String phoneCarrier = input.nextLine();
 
         System.out.print("What is your phone number?");
-        String phoneNumber = input.next();
+        String phoneNumber = input.nextLine();
 
         System.out.print("Who is this phone registered to?");
-        String phoneOwner = input.next();
+        String phoneOwner = input.nextLine();
 
 //Setters:
         cellphone.setSerialNumber(serialNumber);
@@ -44,9 +42,6 @@ public class CellPhoneApplication {
         System.out.println("Phone Carrier: " + cellphone.getPhoneCarrier());
         System.out.println("Phone Number:" + cellphone.getPhoneNumber());
         System.out.println("Phone Owner: " + cellphone.getPhoneOwner());
-
-
-        return cellphone;
 
 
     }
