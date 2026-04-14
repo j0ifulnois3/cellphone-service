@@ -2,11 +2,12 @@ package com.pluralsight;
 
 //CLASS AND DATA:
 public class CellPhone {
-     long serialNumber;
-     String phoneModel;
-     String phoneCarrier;
-     String phoneNumber;
-     String phoneOwner;
+
+     private long serialNumber;
+     private String phoneModel;
+     private String phoneCarrier;
+     private String phoneNumber;
+     private String phoneOwner;
 
 //Constructor:
     public CellPhone() {
