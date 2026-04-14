@@ -3,10 +3,11 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class CellPhoneApplication {
-    private static String[] args;
 
     public static CellPhone main(String[] args) {
-        CellPhoneApplication.args = args;
+
+        CellPhone phone = new CellPhone();
+
         Scanner input = new Scanner(System.in);
 
 
@@ -43,6 +44,8 @@ public class CellPhoneApplication {
         System.out.println("Phone Carrier: " + cellphone.getPhoneCarrier());
         System.out.println("Phone Number:" + cellphone.getPhoneNumber());
         System.out.println("Phone Owner: " + cellphone.getPhoneOwner());
+
+
         return cellphone;
 
 
