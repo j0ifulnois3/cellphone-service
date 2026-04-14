@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import java.lang.reflect.Constructor;
-
 //CLASS AND VARIABLES:
 public class CellPhone {
     private double serialNumber;
@@ -11,7 +9,7 @@ public class CellPhone {
     private String phoneOwner;
 
 //Constructor:
-    public CellPhone(double serialNumber, String phoneModel, String phoneCarrier, String phoneNumber, String phoneOwner) {
+    public CellPhone() {
         this.serialNumber = serialNumber;
         this.phoneModel = phoneModel;
         this.phoneCarrier = phoneCarrier;
@@ -74,4 +72,4 @@ public class CellPhone {
 
 
 
-}
+
