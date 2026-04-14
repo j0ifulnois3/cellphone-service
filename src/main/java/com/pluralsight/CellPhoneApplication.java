@@ -1,10 +1,12 @@
 package com.pluralsight;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class CellPhoneApplication {
+    private static String[] args;
+
     public static CellPhone main(String[] args) {
+        CellPhoneApplication.args = args;
         Scanner input = new Scanner(System.in);
 
 
@@ -13,7 +15,7 @@ public class CellPhoneApplication {
 
 //        Gathering Data:
         System.out.print("What is your serial number? ");
-        double serialNumber = input.nextDouble();
+        long serialNumber = input.nextLong();
 
         System.out.print("What model is your phone?");
         String phoneModel = input.nextLine();
@@ -34,7 +36,7 @@ public class CellPhoneApplication {
         cellphone.setPhoneNumber(phoneNumber);
         cellphone.setPhoneOwner(phoneOwner);
 
-//        OUTPUT:
+//        GETTERS AND OUTPUT:
         System.out.println("\n ~~Phone Records~~");
         System.out.println("Serial Number: " + cellphone.getSerialNumber());
         System.out.println("Model: " + cellphone.getPhoneModel());

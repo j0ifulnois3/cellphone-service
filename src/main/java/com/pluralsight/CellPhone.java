@@ -2,7 +2,7 @@ package com.pluralsight;
 
 //CLASS AND VARIABLES:
 public class CellPhone {
-    private double serialNumber;
+    private long serialNumber;
     private String phoneModel;
     private String phoneCarrier;
     private String phoneNumber;
@@ -22,7 +22,7 @@ public class CellPhone {
         return serialNumber;
     }
 
-    public void setSerialNumber(double serialNumber) {
+    public void setSerialNumber(long serialNumber) {
         this.serialNumber = serialNumber;
     }
 
