@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
+
 //CLASS AND DATA:
 public class CellPhone {
 
@@ -57,6 +59,13 @@ public class CellPhone {
 
     public void setPhoneOwner(String phoneOwner) {
         this.phoneOwner = phoneOwner;
+    }
+
+
+//    Dial METHOD
+
+    public void dial(String phoneNumber){
+        System.out.printf("%s's phone is calling %s",this.phoneOwner,phoneNumber);
     }
 }
 
